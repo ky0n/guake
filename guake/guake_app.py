@@ -734,6 +734,8 @@ class Guake(SimpleGladeApp):
         self.settings.general.triggerOnChangedValue(
             self.settings.general, 'quick-open-command-line'
         )
+        self.settings.general.triggerOnChangedValue(self.settings.general, 'background-image-file')
+        self.settings.general.triggerOnChangedValue(self.settings.general, 'background-image-layout-mode')
         self.settings.style.triggerOnChangedValue(self.settings.style, 'cursor-shape')
         self.settings.styleFont.triggerOnChangedValue(self.settings.styleFont, 'style')
         self.settings.styleFont.triggerOnChangedValue(self.settings.styleFont, 'palette')
